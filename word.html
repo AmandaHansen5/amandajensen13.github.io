@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body 	{
+		background-color: powderblue;
+		text-align: center;
+		font-family: Courier, monospace	;
+		}
+h1   	{
+		color: black;
+		font-style: italic;
+		font-size: 2.5rem;
+		}
+h2		{
+		color: black;
+		font-size: 1.5rem;
+		}
+.Amanda {
+		background-color: white;
+		padding: 10px 50px 10px;
+		border: 1px solid black;
+		margin: 30px;
+		}
+.Amanda2 {
+		background-color: white;
+		padding: 10px 50px 10px;
+		border: 1px solid black;
+		margin: 30px;
+        float: left;
+        text-align: left;
+		}
+img {
+    float: left;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+</style>
+</head>
+<body>
+<div class="Amanda"><h2>Grid Word Finder</h2></div>
+<div class="Amanda">
+<p>This was a group project. The purpose was to create a game similar to Boggle where users can select letters adjecent to one 
+    another in a grid to create words. The game can be played between two users at the same time. Scores are displayed once the game completes.
+</p>
+<a href="https://github.com/aalsarori/BoggleGame">Github Repository</a>
+<p>Example images of two players' synchronous pages are shown below:</p>
+</div>
+<br>
+<br>
+<img src="images\word.jpg" alt="Hangman" height="300">
+
+<div class="Amanda2">
+    <p><strong>I was again responisble mainly for the database and created multiple procedures and functions to maintain it. 
+        The main "dictionary" table I loaded with over 190,000 possible words for the program to validate guessed words against.
+        Here are 2 of the functions/procedures written to maintain data:
+    </strong></p>
+    <p><strong>The first function returns a number corresponding to if a user has guessed a word or not, if the user is valid, if a word is valid then the point value of the word is returned.</strong></p>
+    <p><strong>The second procedure updates either user1 or user2's score depending on the username and gamecode passed in, and then updates a table holding words a user has guessed in that game so that the same word cannot be guessed again.</strong></p>
+    <img src="images\wordguessed.jpg" alt="Hangman" width="500">
+    <img src="images\wordupdatescore.jpg" alt="Hangman" height="300">
+</div>
+</body>
+</html>
